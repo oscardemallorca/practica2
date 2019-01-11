@@ -1,0 +1,228 @@
+/*-------------------------------------
+                ÍNDICE
+
+    · Colores
+    · Estilos generales
+    · Cabecera
+    · Contenedor
+    · Contenido principal
+    · Lateral
+    · Pie de página
+
+
+                COLORES
+
+        principal   dark        light
+verde:  #8bc34a     #5a9216     #bef67a
+azul:   #81d4fa     #4ba3c7     #b6ffff
+gris:   #E1E2E1     #F5F5F6     #414142
+
+--------------------------------------*/
+
+/*-------------------------------------
+                GENERAL
+--------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    font: 16px Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff; /* El body del documento con fondo blanco */
+    width: 100%;
+}
+html{
+    background-color: #8bc34a; /* Toda la pantalla del color del pie de página */
+}
+strong, b{
+    font-weight: bold;
+}
+.clear{
+    clear: both;
+}
+
+/*-------------------------------------
+                CABECERA
+--------------------------------------*/
+
+header{
+    background-color: #8bc34a;
+    width: 100%;
+}
+header h1 {
+    font-size: 2em;
+    padding: 1em 0 0;
+}
+header h1 + h2 {
+    color: white;
+    font-size: 1.2em;
+    padding: .2em 0 .5em;
+    width: auto;
+}
+header hgroup{
+    padding: 0 .5em .2em 5em;
+}
+header ul li{
+    display: inline-block;
+    padding: .45em 0;
+}
+header ul li a{
+    color: white;
+    padding: .5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    background-color: #bef67a;
+    color: black;
+}
+header nav{
+    background-color: #5a9216;
+    height: 32px;
+    text-align: right;
+    width: 100%;
+}
+
+/*-------------------------------------
+                CONTENEDOR
+--------------------------------------*/
+
+#contenedor{
+    background-color: #fff;
+    padding: 0 5em;
+    widows: 100%;
+}
+
+/*-------------------------------------
+                CONTENIDO
+--------------------------------------*/
+
+#contenido_principal{
+    display: inline-block;
+    padding-right: 1em;
+    padding-top: 2em;
+    width: 80%;
+}
+#contenido_principal section{
+    margin-bottom: 2em;
+}
+#contenido_principal p{
+    margin-bottom: 1em;
+}
+#contenido_principal p::first-letter{
+    color: #5a9216;
+}
+#contenido_principal a{
+    color: #4ba3c7;
+}
+#contenido_principal a:hover{
+    color: #81d4fa;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, .7);
+}
+h2{
+    color: #5a9216;
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+#contenido_principal+h2{
+    display: none;
+}
+#contenido_principal > h2{
+    background: url(../img/descarga.jpg) no-repeat;
+    width: 431px;
+    height: 117px;
+}
+#contenido_principal > h2 span{
+    display: none;
+}
+#contenido_principal ul{
+    padding-inline-start: 2em;
+}
+#contenido_principal ul li{
+    padding-bottom: .2em;
+}
+#imagen{
+    text-align: center;
+}
+#imagen > h2{
+    text-align: left;
+}
+#imagen img{
+    border-radius: 50%;
+    height: 150px;
+    margin: 20px;
+    opacity: .50;
+    width: 150px;
+}
+#imagen img:hover{
+    opacity: 1;
+    transition: 1s;
+}
+#tabla table{
+  width:100%;
+}
+#tabla table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#tabla th,
+#tabla td{
+  padding: 15px;
+  text-align: left;
+}
+#tabla tr:nth-child(even){
+  background-color: #b6ffff;
+}
+#tabla tr:nth-child(odd){
+ background-color: #fff;
+}
+#tabla thead th{
+  background-color: #4ba3c7;
+  color: white;
+}
+
+/*-------------------------------------
+                LATERAL
+--------------------------------------*/
+
+#lateral{
+    border-left: 1px solid #8bc34a;
+    display: block;
+    float: right;
+    padding: 0 0 0 1em;
+    width: 20%;
+}
+#menu_lateral{
+    padding-top: 2em;
+}
+#menu_lateral ul{
+    list-style: none;
+}
+#menu_lateral ul li a{
+    color: #5a9216;
+    display: block;
+    padding-bottom: .5em;
+    text-decoration: none;
+}
+#menu_lateral ul li a:hover{
+    text-decoration: underline;
+}
+#menu_lateral ul li a:visited{
+    color: #414142;
+}
+
+/*-------------------------------------
+                  PIE
+--------------------------------------*/
+
+footer{
+    background-color: #8bc34a;
+    clear: both;
+    display: block;
+    margin-top: 1em;
+    padding: 1em 5em;
+    text-align: right;
+    width: 100%;
+}
